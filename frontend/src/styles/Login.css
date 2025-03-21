@@ -1,0 +1,117 @@
+/* Full-screen background */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    background-size: 200% 200%;
+    animation: gradientAnimation 6s ease infinite;
+}
+
+/* Background Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Glassy Login Card */
+.login-card {
+    background: rgba(255, 255, 255, 0.6); /* Increased opacity */
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(203, 210, 7, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+.login-card:hover {
+    transform: scale(1.02);
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #100f0f;
+}
+
+.input-group input, 
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(206, 15, 15, 0.8); /* Increased opacity */
+    color: #000;  /* Black text */
+    transition: 0.3s;
+}
+
+.input-group select {
+    appearance: none;
+    cursor: pointer;
+}
+
+/* Fixes dropdown arrow color issue */
+.input-group select option {
+    background: white;
+    color: black;
+}
+
+/* Login Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 165, 0, 0.8); /* Orange color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: rgba(255, 140, 0, 1); /* Darker orange */
+    transform: scale(1.05);
+}
+
+/* Error Message */
+.error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Register Link Styling */
+.register-link {
+    color: #131212;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+    color: #2f00ff;
+    background: rgba(250, 249, 246, 0.4);
+}

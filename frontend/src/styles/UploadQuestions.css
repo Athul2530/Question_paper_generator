@@ -1,0 +1,89 @@
+/* Ensure the entire viewport is covered */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Make sure the container expands fully */
+  .upload-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  
+  /* Style for the card to ensure proper spacing */
+  .upload-card {
+    background: rgba(222, 229, 230, 0.9); /* Slight transparency */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  
+  /* Heading */
+  .upload-card h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  /* Labels */
+  .form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Select & Input Styling */
+  select, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    outline: none;
+  }
+  
+  /* Hover & Focus Effects */
+  select:focus, textarea:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-left: 3px solid #ffcc00;
+  }
+  
+  /* Button Styling */
+  .upload-btn {
+    background: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* Button Hover */
+  .upload-btn:hover {
+    background: #ffd633;
+    transform: translateY(-2px);
+  }
+  
