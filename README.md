@@ -19,7 +19,6 @@ Teachers can create, submit, and manage question papers, while admins can review
 - **Frontend:** React.js, Tailwind CSS, Material-UI  
 - **Backend:** Node.js (Express.js)  
 - **Database:** MongoDB Atlas  
-- **Authentication:** JWT (JSON Web Tokens)  
 
 ---
 
